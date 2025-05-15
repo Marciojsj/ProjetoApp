@@ -1,34 +1,31 @@
-import { Dimensions, StyleSheet } from "react-native";
-import { th } from "vuetify/locale";
-import { themas } from "../../global/themes";
+import { Dimensions, StyleSheet } from 'react-native';
+import { themas } from '../../global/themes';
+
 export const style = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: themas.colors.background,
         alignItems: 'center',
         justifyContent: 'center',
-        // padding: 20,
-
+        paddingHorizontal: 20,
     },
     boxTop: {
-        height: Dimensions.get('window').height / 3,
-        // backgroundColor: 'red',
+        flex: 1,
         width: '100%',
         alignItems: 'center',
         justifyContent: 'center',
     },
     boxMid: {
-        height: Dimensions.get('window').height / 4,
-        // backgroundColor: 'blue',
+        flex: 1,
         width: '100%',
         paddingHorizontal: 37,
+        justifyContent: 'center',
     },
     boxBottom: {
-        height: Dimensions.get('window').height / 3,
-        // backgroundColor: 'green',
+        flex: 1,
         width: '100%',
         alignItems: 'center',
-        // justifyContent: 'center',
+        justifyContent: 'center',
     },
     logo: {
         width: 100,
@@ -39,6 +36,7 @@ export const style = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold',
         marginTop: 40,
+        color: themas.colors.text,
     },
     titleInput: {
         marginTop: 20,
@@ -55,15 +53,17 @@ export const style = StyleSheet.create({
         flexDirection: 'row',
         borderRadius: 40,
         alignItems: 'center',
-        paddingHorizontal: 5,
+        paddingHorizontal: 10,
         backgroundColor: themas.colors.lightGray,
         borderColor: themas.colors.lightGray,
     },
     input: {
-        width: '90%',
+        flex: 1,
         height: '100%',
         borderRadius: 40,
-        paddingLeft: 5,
+        paddingLeft: 10,
+        fontSize: 16,
+        color: themas.colors.text,
     },
     button: {
         width: 250,
@@ -73,16 +73,11 @@ export const style = StyleSheet.create({
         borderRadius: 40,
         alignItems: 'center',
         justifyContent: 'center',
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 6,
-        },
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 6 },
         shadowOpacity: 0.37,
         shadowRadius: 7.49,
-
         elevation: 12,
-
     },
     textButton: {
         fontSize: 16,
@@ -92,6 +87,6 @@ export const style = StyleSheet.create({
     textBottom: {
         fontSize: 16,
         color: themas.colors.gray,
-
+        marginTop: 10,
     },
 });

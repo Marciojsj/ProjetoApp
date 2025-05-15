@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "myList",
-    "slug": "myList",
+    "slug": "projetoappp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -24,6 +24,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c8b9003e-f15d-4f9c-8fdd-3f5215ccc530"
+      }
+    },
+    "owner": "marciio.junioor"
   }
 }
