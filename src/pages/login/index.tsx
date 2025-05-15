@@ -38,6 +38,13 @@ export default function Login() {
                         style={style.input}
                         value={email}
                         onChangeText={setEmail}
+                        keyboardType="email-address"
+                        autoCapitalize="none"
+                        autoCorrect={false}
+                        returnKeyType="next"
+                        enablesReturnKeyAutomatically
+                        placeholder="Digite seu email" // Adicione placeholder
+                        placeholderTextColor={themas.colors.gray}
                     />
 
                     <MaterialIcons name="email"
@@ -48,10 +55,15 @@ export default function Login() {
                 <View style={style.boxInput}>
                     <TextInput
                         style={style.input}
-                        value={password} 
-                        onChangeText={(e)=> setPassword(e)}
-
-                        />
+                        value={password}
+                        onChangeText={setPassword}
+                        secureTextEntry
+                        autoCapitalize="none"
+                        returnKeyType="done"
+                        placeholder="Digite sua senha"
+                        placeholderTextColor={themas.colors.gray}
+                        keyboardType="default" // 👈 Alterado de email-address para default
+                    />
 
                     <MaterialIcons name="remove-red-eye"
                         size={20}
@@ -59,8 +71,11 @@ export default function Login() {
                 </View>
             </View>
             <View style={style.boxBottom}>
-                <TouchableOpacity style={style.button}>
-                    <Text style={style.textButton} > Entrar</Text>
+                <TouchableOpacity
+                    style={style.button}
+                    onPress={() => alert('Botão pressionado!')} // 👈 Adicionar handler
+                >
+                    <Text style={style.textButton}>Entrar</Text>
                 </TouchableOpacity>
             </View>
             <Text style={style.textBottom} >Não tem uma conta? <Text style={{ color: themas.colors.primary }}>Crie agora!</Text></Text>
