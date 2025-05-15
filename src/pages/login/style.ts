@@ -60,14 +60,11 @@ export const style = StyleSheet.create({
         borderColor: themas.colors.lightGray,
     },
     input: {
-        flex: 1,
-        height: 40,
+        width: '90%',
+        height: '100%',
         borderRadius: 40,
-        paddingLeft: 10,
-        fontSize: 16,
-      }
-      ,
-      
+        paddingLeft: 5,
+    },
     button: {
         width: 250,
         height: 50,

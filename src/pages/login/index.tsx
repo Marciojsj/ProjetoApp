@@ -40,16 +40,16 @@ export default function Login() {
                         onChangeText={setEmail}
                     />
 
-                    {/* <MaterialIcons name="email"
+                    <MaterialIcons name="email"
                         size={20}
-                        color={themas.colors.gray} /> */}
+                        color={themas.colors.gray} />
                 </View>
                 <Text style={style.titleInput}>SENHA:</Text>
                 <View style={style.boxInput}>
                     <TextInput
                         style={style.input}
                         value={password} 
-                        onChangeText={setPassword}
+                        onChangeText={(e)=> setPassword(e)}
 
                         />
 
