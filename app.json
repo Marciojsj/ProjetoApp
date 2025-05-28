@@ -30,6 +30,9 @@
         "projectId": "c8b9003e-f15d-4f9c-8fdd-3f5215ccc530"
       }
     },
-    "owner": "marciio.junioor"
+    "owner": "marciio.junioor",
+    "plugins": [
+      "expo-secure-store"
+    ]
   }
 }
