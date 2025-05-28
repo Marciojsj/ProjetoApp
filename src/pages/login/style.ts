@@ -1,0 +1,92 @@
+import { Dimensions, StyleSheet } from 'react-native';
+import { themas } from '../../global/themes';
+
+export const style = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: themas.colors.background,
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingHorizontal: 20,
+    },
+    boxTop: {
+        flex: 1,
+        width: '100%',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    boxMid: {
+        flex: 1,
+        width: '100%',
+        paddingHorizontal: 37,
+        justifyContent: 'center',
+    },
+    boxBottom: {
+        flex: 1,
+        width: '100%',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    logo: {
+        width: 100,
+        height: 100,
+        borderRadius: 50,
+    },
+    text: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        marginTop: 40,
+        color: themas.colors.text,
+    },
+    titleInput: {
+        marginTop: 20,
+        marginLeft: 5,
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: themas.colors.gray,
+    },
+    boxInput: {
+        width: '100%',
+        height: 40,
+        borderWidth: 1,
+        marginTop: 10,
+        flexDirection: 'row',
+        borderRadius: 40,
+        alignItems: 'center',
+        paddingHorizontal: 10,
+        backgroundColor: themas.colors.lightGray,
+        borderColor: themas.colors.lightGray,
+    },
+    input: {
+        flex: 1,
+        height: '100%',
+        borderRadius: 40,
+        paddingLeft: 10,
+        fontSize: 16,
+        color: themas.colors.text,
+    },
+    button: {
+        width: 250,
+        height: 50,
+        marginTop: 30,
+        backgroundColor: themas.colors.primary,
+        borderRadius: 40,
+        alignItems: 'center',
+        justifyContent: 'center',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 6 },
+        shadowOpacity: 0.37,
+        shadowRadius: 7.49,
+        elevation: 12,
+    },
+    textButton: {
+        fontSize: 16,
+        color: '#fff',
+        fontWeight: 'bold',
+    },
+    textBottom: {
+        fontSize: 16,
+        color: themas.colors.gray,
+        marginTop: 10,
+    },
+});
